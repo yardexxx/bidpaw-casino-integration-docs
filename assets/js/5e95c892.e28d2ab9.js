@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcasino_docs=self.webpackChunkcasino_docs||[]).push([[647],{8122:(s,e,c)=>{c.r(e),c.d(e,{default:()=>t});c(6540);var r=c(4164),a=c(1769),n=c(204),u=c(2831),o=c(1410),d=c(4848);function t(s){return(0,d.jsx)(a.e3,{className:(0,r.A)(n.G.wrapper.docsPages),children:(0,d.jsx)(o.A,{children:(0,u.v)(s.route.routes)})})}}}]);
