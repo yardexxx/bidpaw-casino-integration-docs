@@ -14,20 +14,24 @@ A request to withdraw money from the user is executed when the player:
 
 #### Request header (HTTP Header)
 
-| Parameter Name | Description       | Optional / Mandatory | Data type |
-|----------------|-------------------|----------------------|-----------|
-| sign           | Request signature | Mandatory            |  string   |
+| Parameter Name | Description       | Optional / Mandatory       | Data type |
+|----------------|-------------------|----------------------------|-----------|
+| sign           | Request signature | Optional (not implemented) |  string   |
+
+> **NOTE:** If your integration requires signing requests or using a custom authentication scheme, **please contact us** so we can provide you with the appropriate keys and instructions.
+
 
 #### Request parameters
-| Parameter Name | Description                         | Optional / Mandatory | Data type |
-|----------------|-------------------------------------|----------------------|-----------|
-| method         | charge / credit                     | Mandatory            | string    |
-| userId         | User identifier from your system    | Mandatory            | string    |
-| clientId       | Casino id                           | Mandatory            | string    |
-| sessionId      | Session identifier                  | Mandatory            | string    |
-| amount         | Amount to withdraw/deposit in Cents | Mandatory            | integer   |
-| currency       | ISO currency code                   | Mandatory            | string    |
-| transactionId  | Transaction ID                      | Mandatory	           | string    |
+| Parameter Name | Description                                                          | Optional / Mandatory | Data type |
+|----------------|----------------------------------------------------------------------|----------------------|-----------|
+| method         | charge / credit                                                      | Mandatory            | string    |
+| userId         | User identifier from your system                                     | Mandatory            | string    |
+| clientId       | Casino id                                                            | Mandatory            | string    |
+| gameId         | End-to-end parameter (provider - platform - casino) for all methods. | Mandatory            | string    |
+| sessionId      | Session identifier                                                   | Mandatory            | string    |
+| amount         | Amount to withdraw/deposit in Cents in users currency                | Mandatory            | integer   |
+| currency       | ISO currency code                                                    | Mandatory            | string    |
+| transactionId  | Transaction ID                                                       | Mandatory	           | string    |
 
 #### Response parameters
 
